@@ -19,10 +19,10 @@ class JobSeeder extends Seeder
 
         Job::factory(20)->hasAttached($tags)->create(new Sequence([
             'featured' => false,
-            'schedule' => 'Full Time'
+            'schedule' => 'Full Time',
         ],[
             'featured' => true,
-            'schedule' => 'Part Time'
+            'schedule' => 'Part Time',
         ]));
     }
 }
